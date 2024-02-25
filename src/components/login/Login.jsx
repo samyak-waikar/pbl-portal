@@ -32,10 +32,11 @@ const Login = () => {
             </div>
             {action==="Sign Up"?<div></div>:<div className="forgot">Forgot password?</div>}
             {action==="Sign Up"?<div></div>:<div className="forgot" onClick={()=>{setAction("Sign Up")}}>New User?</div>}
+            {action==="Login"?<div></div>:<div className="forgot" onClick={()=>{setAction("Login")}}>Already A User?</div>}
             
             <div className="submit-container">
-                <div className={action==="Login"?"submit gray":"submit"} ><Link to = "/">Sign Up</Link></div>
-                <div className={action==="Sign Up"?"submit gray":"submit"} >Login</div>
+                <div className={action==="Login"?"submit gray":"submit"} ><Link to = "/" className="link">Sign Up</Link></div>
+                <div className={action==="Login"?"submit gray":"submit"} ><Link to = "/" className="link">Login</Link></div>
 
             </div>
         </div>

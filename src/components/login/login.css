@@ -70,7 +70,15 @@
     display: flex;
     gap: 30px;
     margin: 60px auto;
+
+    .link{
+        text-decoration: none;
+        color: #8552cd;
+    }
+
 }
+
+
 
 .submit{
     display: flex;
@@ -78,12 +86,19 @@
     align-items: center;
     width: 220px;
     height: 59px;
-    color: white;
-    background: #8552cd;
+    /* color: white; */
+    background: #eaeaea;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.submit:hover{
+    background: #8552cd;
+    .link{
+        color: white;
+    }
 }
 
 .gray{
